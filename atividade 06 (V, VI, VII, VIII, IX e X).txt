@@ -1,0 +1,17 @@
+V - insert into turma(id_turma, num_periodo, id_professor) values(3, 20201, 3);
+O comando falhou pois a chave primária (id_disciplina) não foi preenchida.
+
+VI - insert into turma(id_turma, num_periodo, id_disciplina) values(3, 20202, 1);
+A tabela turma foi preenchida nas colunas id_turma, num_periodo e id_disciplina, a coluna id_professor não foi preenchida.
+
+VII - update disciplina set id_disciplina = 3 where nome_disciplina = 'BANCO DE DADOS I';
+O comando falhou, pois a id_disciplina é chave estrangeira de turma.
+
+VIII - update historico set num_faltas = 0 where id_aluno = 1 and id_turma = 1;
+O aluno com id_aluno = 1 e id_turma = 1 teve as faltas alteradas para 0 na tabela historico.
+
+IX - delete from aluno where nome_aluno = 'PEDRO';
+O aluno com nome_aluno = PEDRO foi excluído.
+
+X - delete from disciplina where nome_disciplina = 'BANCO DE DADOS II';
+A disciplina com nome_disciplina = BANCO DE DADOS II foi excluído.
