@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<architect-project version="1.0" appversion="1.0.8">
+ <project-name>atividade 04 III</project-name>
+ <print-settings numCopies="1" zoom="1.0" pageNumbersPrinted="true" orientation="1" paperWidth="612.0" paperHeight="792.0" leftBorder="50.0" rightBorder="50.0" topBorder="50.0" bottomBorder="50.0" />
+ <project-data-sources>
+  <data-source id="DS0">
+   <property key="Logical" value="Modelo de Dados" />
+  </data-source>
+ </project-data-sources>
+ <source-databases>
+ </source-databases>
+ <target-database id="ppdb" dbcs-ref="DS0">
+  <table id="TAB1" populated="true" UUID="efead47e-9c09-4608-8607-18b553efbdd8" name="Emprestimo" objectType="TABLE" physicalName="Emprestimo" >
+   <remarks></remarks>
+   <folder id="FOLTAB11" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL2" populated="true" UUID="50c8ddde-fda7-400a-ae30-08f4d0705759" autoIncrement="false" autoIncrementSequenceName="Emprestimo_num_matricula_seq" defaultValue="" name="num_matricula" nullable="0" physicalName="num_matricula" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL3" populated="true" UUID="0b333716-275d-4013-bb33-9e748d017d80" autoIncrement="false" autoIncrementSequenceName="Emprestimo_num_isbn_seq" defaultValue="" name="num_isbn" nullable="0" physicalName="num_isbn" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL4" populated="true" UUID="c818ebad-5066-4a54-bc2b-78cd5fa18f0b" autoIncrement="false" autoIncrementSequenceName="Emprestimo_dat_emprestimo_seq" defaultValue="" name="dat_emprestimo" nullable="0" physicalName="dat_emprestimo" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL5" populated="true" UUID="3e3e9933-8214-474a-beb9-0ec278b487e9" autoIncrement="false" autoIncrementSequenceName="Emprestimo_dat_devolucao_seq" defaultValue="" name="dat_devolucao" nullable="0" physicalName="dat_devolucao" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB13" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX6" populated="true" UUID="052af961-795b-42b5-ba48-3fa169ef9707" clustered="false" name="Emprestimo_pk" physicalName="Emprestimo_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC7" populated="true" UUID="e7744aea-7abe-45d7-9c51-a57078b54503" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="num_matricula" physicalName="num_matricula" />
+     <index-column id="IDC8" populated="true" UUID="6a197290-380b-4aa1-81d3-39a64091fe0e" ascendingOrDescending="UNSPECIFIED" column-ref="COL3" name="num_isbn" physicalName="num_isbn" />
+     <index-column id="IDC9" populated="true" UUID="bb665034-e096-4602-9fcd-55327cbbd12f" ascendingOrDescending="UNSPECIFIED" column-ref="COL4" name="dat_emprestimo" physicalName="dat_emprestimo" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB10" populated="true" UUID="b9d436a5-d368-4e6b-9022-0e5a29634319" name="Aluno" objectType="TABLE" physicalName="Aluno" >
+   <remarks></remarks>
+   <folder id="FOLTAB101" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL11" populated="true" UUID="cfaf925c-f473-4a4c-b3bd-7db6df87baa8" autoIncrement="false" autoIncrementSequenceName="Aluno_num_matricula_seq" defaultValue="" name="num_matricula" nullable="0" physicalName="num_matricula" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL12" populated="true" UUID="8dff7dbf-cd3e-48ce-9a2c-74302ea4c972" autoIncrement="false" autoIncrementSequenceName="Aluno_nom_aluno_seq" defaultValue="" name="nom_aluno" nullable="0" physicalName="nom_aluno" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB103" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB102" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB104" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX13" populated="true" UUID="40f1ae59-d56e-4aaf-a890-a750a15cdee3" clustered="false" name="Aluno_pk" physicalName="Aluno_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC14" populated="true" UUID="ec39467b-a873-4c74-a74f-a93a68ecba86" ascendingOrDescending="UNSPECIFIED" column-ref="COL11" name="num_matricula" physicalName="num_matricula" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB15" populated="true" UUID="a0b67cdf-2820-4a09-8c34-92500185b609" name="Livro" objectType="TABLE" physicalName="Livro" >
+   <remarks></remarks>
+   <folder id="FOLTAB151" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL16" populated="true" UUID="349fd932-7cdf-4a78-9af0-7dcbdbae39c2" autoIncrement="false" autoIncrementSequenceName="Livro_num_isbn_seq" defaultValue="" name="num_isbn" nullable="0" physicalName="num_isbn" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL17" populated="true" UUID="f6d20d29-321d-4359-ad32-dd9d42c2409a" autoIncrement="false" autoIncrementSequenceName="Livro_cod_editora_seq" defaultValue="" name="cod_editora" nullable="0" physicalName="cod_editora" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL18" populated="true" UUID="b06d0021-6eb2-4c57-a015-0f619ec861da" autoIncrement="false" autoIncrementSequenceName="Emprestimo_num_matricula_seq" defaultValue="" name="num_matricula" nullable="0" physicalName="num_matricula" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL19" populated="true" UUID="c571d00f-c980-488f-9d43-bae87911c121" autoIncrement="false" autoIncrementSequenceName="Emprestimo_dat_emprestimo_seq" defaultValue="" name="dat_emprestimo" nullable="0" physicalName="dat_emprestimo" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL20" populated="true" UUID="81fac193-26a7-4841-9ed9-39149144af51" autoIncrement="false" autoIncrementSequenceName="Livro_num_paginas_seq" defaultValue="" name="num_paginas" nullable="0" physicalName="num_paginas" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="-6" userDefinedTypeUUID="608a1d2c-c960-44ac-b1f3-503aba0a5b7b" >
+     <remarks></remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="641ee844-051b-4b42-9c01-cc48a436569b" autoIncrement="false" autoIncrementSequenceName="Livro_tit_livro_seq" defaultValue="" name="tit_livro" nullable="0" physicalName="tit_livro" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB153" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB152" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB154" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX22" populated="true" UUID="8db0ee5c-ecbe-40c7-b044-914ed39e9971" clustered="false" name="Livro_pk" physicalName="Livro_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC23" populated="true" UUID="d2a74703-7c41-4199-b0fd-ce243d2ec192" ascendingOrDescending="UNSPECIFIED" column-ref="COL16" name="num_isbn" physicalName="num_isbn" />
+     <index-column id="IDC24" populated="true" UUID="3b83bb01-51b8-43e7-9352-4a679cd7e2f3" ascendingOrDescending="UNSPECIFIED" column-ref="COL17" name="cod_editora" physicalName="cod_editora" />
+     <index-column id="IDC25" populated="true" UUID="c504336d-d7e2-4fb4-b38a-14a0316e4e0b" ascendingOrDescending="UNSPECIFIED" column-ref="COL18" name="num_matricula" physicalName="num_matricula" />
+     <index-column id="IDC26" populated="true" UUID="9ac945a9-25f8-4c97-8173-8db251a047f5" ascendingOrDescending="UNSPECIFIED" column-ref="COL19" name="dat_emprestimo" physicalName="dat_emprestimo" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB27" populated="true" UUID="82d12d45-fe40-4800-a8ca-0a49d92a2666" name="Editora" objectType="TABLE" physicalName="Editora" >
+   <remarks></remarks>
+   <folder id="FOLTAB271" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL28" populated="true" UUID="91774465-4c19-42bc-b93c-0a2603aee610" autoIncrement="false" autoIncrementSequenceName="Editora_cod_editora_seq" defaultValue="" name="cod_editora" nullable="0" physicalName="cod_editora" precision="0" primaryKeySeq="0" referenceCount="2" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL29" populated="true" UUID="17294e99-d8be-45e0-ba86-12cbb2cfab88" autoIncrement="false" autoIncrementSequenceName="Livro_num_isbn_seq" defaultValue="" name="num_isbn" nullable="0" physicalName="num_isbn" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL30" populated="true" UUID="059e0ee4-1dcd-4679-8796-f147ebd5deac" autoIncrement="false" autoIncrementSequenceName="Emprestimo_num_matricula_seq" defaultValue="" name="num_matricula" nullable="0" physicalName="num_matricula" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    <column id="COL31" populated="true" UUID="36c8e0b1-117d-4cdb-be15-0028aaba38dd" autoIncrement="false" autoIncrementSequenceName="Emprestimo_dat_emprestimo_seq" defaultValue="" name="dat_emprestimo" nullable="0" physicalName="dat_emprestimo" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL32" populated="true" UUID="bb4d491c-b5fb-4834-b05c-c1aeb782e19c" autoIncrement="false" autoIncrementSequenceName="Editora_nom_editora_seq" defaultValue="" name="nom_editora" nullable="0" physicalName="nom_editora" precision="50" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB273" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB272" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB274" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX33" populated="true" UUID="dd34b252-fcde-4544-aa10-86158f8c0daf" clustered="false" name="Editora_pk" physicalName="Editora_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC34" populated="true" UUID="e4d42226-67a6-4d7c-86e2-2e947b258292" ascendingOrDescending="UNSPECIFIED" column-ref="COL28" name="cod_editora" physicalName="cod_editora" />
+     <index-column id="IDC35" populated="true" UUID="30fec723-6d78-4fc5-958f-177dedc16354" ascendingOrDescending="UNSPECIFIED" column-ref="COL29" name="num_isbn" physicalName="num_isbn" />
+     <index-column id="IDC36" populated="true" UUID="721a867e-4b10-4091-8e51-0e2a02f12225" ascendingOrDescending="UNSPECIFIED" column-ref="COL30" name="num_matricula" physicalName="num_matricula" />
+     <index-column id="IDC37" populated="true" UUID="79c2a468-d91f-42da-8180-d4c3f3e9eb70" ascendingOrDescending="UNSPECIFIED" column-ref="COL31" name="dat_emprestimo" physicalName="dat_emprestimo" />
+    </index>
+   </folder>
+  </table>
+  <relationships>
+   <relationship id="REL38" populated="true" UUID="afb6f5e6-1185-4b6f-bc22-79a5c817750c" deferrability="7" deleteRule="3" fk-table-ref="TAB15" fkCardinality="7" identifying="true" name="Emprestimo_Livro_fk" physicalName="Emprestimo_Livro_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP39" populated="true" UUID="32d47742-71ae-4a61-be5b-1086509b3dc2" fk-column-ref="COL18" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+    <column-mapping id="CMP40" populated="true" UUID="888f15c0-30e9-499f-a954-396ddfdb80ed" fk-column-ref="COL16" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
+    <column-mapping id="CMP41" populated="true" UUID="cfc5a78a-b077-4e9c-afb8-c06738f88894" fk-column-ref="COL19" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL4" />
+   </relationship>
+   <relationship id="REL42" populated="true" UUID="0a74b12a-b68a-4c53-94b6-90ea71a3d407" deferrability="7" deleteRule="3" fk-table-ref="TAB1" fkCardinality="7" identifying="true" name="Aluno_Emprestimo_fk" physicalName="Aluno_Emprestimo_fk" pk-table-ref="TAB10" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP43" populated="true" UUID="3b939f36-e1d9-4af5-a27e-cee31737c260" fk-column-ref="COL2" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL11" />
+   </relationship>
+   <relationship id="REL44" populated="true" UUID="7ba303b3-a590-4982-bcfb-1bf22677a139" deferrability="7" deleteRule="3" fk-table-ref="TAB27" fkCardinality="7" identifying="true" name="Livro_Editora_fk" physicalName="Livro_Editora_fk" pk-table-ref="TAB15" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP45" populated="true" UUID="32ecd67e-0c8a-48f5-a2ce-a6b696d9eebb" fk-column-ref="COL29" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL16" />
+    <column-mapping id="CMP46" populated="true" UUID="71da05f7-22d9-420a-850e-2455dc3aaec5" fk-column-ref="COL28" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL17" />
+    <column-mapping id="CMP47" populated="true" UUID="2d365be7-05e0-46bf-980a-8f0b38866e3a" fk-column-ref="COL30" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL18" />
+    <column-mapping id="CMP48" populated="true" UUID="a540ce29-f5bd-47af-a6fb-81b26f7d97ad" fk-column-ref="COL31" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
+   </relationship>
+  </relationships>
+ </target-database>
+ <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
+ <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
+ <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
+ <play-pen zoom="0.9999999999999999" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
+  <table-pane table-ref="TAB1" x="387" y="90" bgColor="0xc7d0df" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB10" x="812" y="114" bgColor="0xc7d0df" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB15" x="399" y="347" bgColor="0xc7d0df" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-pane table-ref="TAB27" x="20" y="359" bgColor="0xc7d0df" fgColor="0x000000" rounded="true" dashed="false"/>
+  <table-link relationship-ref="REL42" pkConnection="0.38596491228070173" fkConnection="0.5647058823529412" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL38" pkConnection="0.5229357798165137" fkConnection="0.46788990825688076" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL44" pkConnection="0.5575221238938053" fkConnection="0.5151515151515151" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+ </play-pen>
+ <critic-manager>
+  <critic-grouping platformType="Generic" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PrimaryKeyCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.RelationshipMappingTypeCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.EmptyRelationshipCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.AlphaNumericSequenceNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetDefaultOnColumnWithNoDefaultCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SetNullOnNonNullableColumnCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DuplicateNameCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="DB2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.DB2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="H2" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.H2UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="HSQLDB" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.HSQLDBUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="MySQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLCommentCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.MySQLUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="Oracle" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OraclePhysicalNameCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleReservedWordsCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.OracleUnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="PostgreSQL" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.PostgreSQLReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerUnsupportedFeaturesCritic" severity="ERROR"/>
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServerReservedWordsCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2000" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2000UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+  <critic-grouping platformType="SQL Server 2005" enabled="true">
+   <critic-settings class="ca.sqlpower.architect.ddl.critic.impl.SQLServer2005UnsupportedFeaturesCritic" severity="ERROR"/>
+  </critic-grouping>
+ </critic-manager>
+ <profiles topNCount="10">
+  </profiles>
+  <olap>
+  </olap>
+  <olap-gui>
+  </olap-gui>
+</architect-project>
